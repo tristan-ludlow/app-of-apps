@@ -8,7 +8,7 @@ spec:
   sources:
   - repoURL: https://fniko.github.io/keydb-helm-chart/
     chart: keydb
-    targetRevision: 1.0.4
+    targetRevision: 1.0.*
     helm:
       valueFiles:
       - $values/custom-values-{{ .Values.env }}.yaml
@@ -16,5 +16,5 @@ spec:
     targetRevision: HEAD
     ref: values
   destination:
-    server: {{ .Values.spec.destination.server }}
-    namespace: default
+    server: {{ .Values.cluster }}
+    namespace: {{ .Values.namespace }}
