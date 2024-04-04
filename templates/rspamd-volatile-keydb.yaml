@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: rspamd-volatile-keydb
+  namespace: argocd
+spec:
+  project: antispam
+  sources:
+  - repoURL: https://fniko.github.io/keydb-helm-chart/
+    chart: keydb
+    targetRevision: 1.0.4
+    helm:
+      valueFiles:
+      - $values/custom-values-{{ .Values.env }}.yaml
+  - repoURL: https://github.com/tristan-ludlow/rspamd-volatile-keydb.git
+    targetRevision: HEAD
+    ref: values
+  destination:
+    server: {{ .Values.spec.destination.server }}
+    namespace: default

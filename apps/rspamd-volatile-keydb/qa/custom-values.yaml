@@ -1,3 +1,0 @@
-nodes: 1
-persistentVolume:
-  size: 1Gi
