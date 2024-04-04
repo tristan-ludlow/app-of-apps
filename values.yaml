@@ -1,0 +1,14 @@
+# Default values for argo-apps.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+#env can be: prod, dev, qa
+env: "dev"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+spec:
+  destination:
+    server: https://kubernetes.default.svc
