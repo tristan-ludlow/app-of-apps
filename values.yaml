@@ -3,7 +3,9 @@
 # Declare variables to be passed into your templates.
 
 #env can be: prod, dev, qa
-env: "dev"
+env: dev
+namespace: default
+
 
 imagePullSecrets: []
 nameOverride: ""
