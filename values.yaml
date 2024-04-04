@@ -5,12 +5,4 @@
 #env can be: prod, dev, qa
 env: dev
 namespace: default
-
-
-imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
-
-spec:
-  destination:
-    server: https://kubernetes.default.svc
+cluster: https://kubernetes.default.svc
