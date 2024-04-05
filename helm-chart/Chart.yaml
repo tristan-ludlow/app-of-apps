@@ -1,6 +1,6 @@
 apiVersion: v2
-name: argo-apps
-description: A Helm chart for Kubernetes
+name: app-of-apps
+description: An umbrella app-of-apps application provided as a Helm chart which delivers the ArgoCD application manifests for all services related to the Antispam Kubernetes project
 
 # A chart can be either an 'application' or a 'library' chart.
 #
