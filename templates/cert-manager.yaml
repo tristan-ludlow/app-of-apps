@@ -17,7 +17,7 @@ spec:
           value: 'true'
   destination:
     namespace: {{ .Values.namespace }}
-    name: kind
+    server: {{ .Values.cluster }}
   syncPolicy:
     automated: {}
     syncOptions:
