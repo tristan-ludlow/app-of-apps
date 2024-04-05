@@ -20,8 +20,3 @@ spec:
   destination:
     server: {{ .Values.dest.cluster }}
     namespace: {{ .Values.dest.namespace }}
-  syncPolicy:
-    automated: {}
-    syncOptions:
-      - CreateNamespace=true
-      - ServerSideApply=true
