@@ -10,7 +10,7 @@ spec:
   sources:
   - repoURL: https://fniko.github.io/keydb-helm-chart/
     chart: keydb
-    targetRevision: 1.0.*
+    targetRevision: 1.0.5
     helm:
       valueFiles:
       - $values/custom-values-ext-apps/rspamd-volatile-keydb/{{ .Values.env }}/custom-values.yaml
