@@ -10,5 +10,5 @@ spec:
     chart: nginx
     targetRevision: 13.2.12
   destination:
-    server: {{ .Values.spec.destination.server }}
-    namespace: default
+    server: {{ .Values.cluster }}
+    namespace: {{ .Values.namespace }}
