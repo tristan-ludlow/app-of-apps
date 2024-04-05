@@ -2,7 +2,10 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-#env can be: prod, dev, qa
 env: dev
-namespace: default
-cluster: https://kubernetes.default.svc
+project: default
+namespace: argocd
+
+dest:
+  namespace: default
+  cluster: https://kubernetes.default.svc
