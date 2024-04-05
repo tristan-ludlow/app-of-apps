@@ -1,0 +1,3 @@
+nodes: 6
+persistentVolume:
+  size: 3Gi
